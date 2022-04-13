@@ -1,17 +1,16 @@
-
-d ={
-"name": 'Иван',
-"mid_name": 'Иванов',
-"balance": 10000
+gender = {
+    'm': 'Дорогой',
+    'f': 'Дорогая'
 }
 
+a =[
+    ['Иван', 'Иванов', 10000, 'm'],
+    ['Тамара', 'Анатольевна', 10000, 'f'],
+    ['Семен', 'Семенович', 10000, 'm']
+]
 
+for name, mid_name,balance, g in a:
+    text = f"""{gender[g]} {name} {mid_name}, баланс вашего лицевого счета
+составляет {balance} $"""
+    print(text)
 
-def f(x):
-    return x**2
-
-
-text = f"""Дорогой {d['name']} {d['mid_name']}, баланс вашего лицевого счета
-составляет {d.get('balance')} $"""
-
-print(text)

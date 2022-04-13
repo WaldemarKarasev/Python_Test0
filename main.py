@@ -1,20 +1,17 @@
-def add(a, b):
-    return a + b
 
-def division(a, b):
-    return a / b
+d ={
+"name": 'Иван',
+"mid_name": 'Иванов',
+"balance": 10000
+}
 
-text = 'text'
 
-def minus(a,b):
-    return a - b
 
-# if __name__ == 'main':
-print('Hello')
-print(add(2,4))
-print(minus(5,1))
+def f(x):
+    return x**2
 
-a = 54
-b = [4, 45, 6, 67, 65]
-print(b)
-print(division(6, 3))
+
+text = f"""Дорогой {d['name']} {d['mid_name']}, баланс вашего лицевого счета
+составляет {d.get('balance')} $"""
+
+print(text)
